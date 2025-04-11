@@ -37,11 +37,9 @@ docker-compose up --build
 
 ##  Configuration
 Modifier le fichier `.env` :
-```ini
+
 JWT_SECRET=ma_clé_secrète
 MONGO_URI=mongodb://mongo:27017/tp_api  # Avec Docker
-```
 
----
 
-Développé avec  par Abada aziz
+Développé par Abada aziz
