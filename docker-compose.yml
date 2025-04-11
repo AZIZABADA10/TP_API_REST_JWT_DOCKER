@@ -11,8 +11,7 @@ services:
       - mongo
     volumes:
       - ./:/app
-      - /app/node_modules  # Préserve le répertoire node_modules du conteneur
-
+      - /app/node_modules  
   mongo:
     image: mongo:latest
     ports:
