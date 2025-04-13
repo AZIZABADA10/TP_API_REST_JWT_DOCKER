@@ -4,7 +4,7 @@ const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 const auth = require('../middleware/auth');
 
-// ✅ Register
+//  Register
 router.post('/register', async (req, res) => {
   const { username, password } = req.body;
 
@@ -24,7 +24,7 @@ router.post('/register', async (req, res) => {
   }
 });
 
-// ✅ Login
+//  Login
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;
 
@@ -44,7 +44,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// ✅ Protected Profile Route
+// Protected Profile Route
 router.get('/profile', auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select('-password');

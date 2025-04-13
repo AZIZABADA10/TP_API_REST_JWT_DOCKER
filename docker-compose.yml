@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./Backend
+    container_name: backend_container
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./Backend:/app
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/mydb
+      - JWT_SECRET=supersecret
+    depends_on:
+      - mongo
+
+  frontend:
+    build: ./frontend
+    container_name: frontend_container
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true
+
+  mongo:
+    image: mongo
+    container_name: mongo_container
+    ports:
+      - "27017:27017"
