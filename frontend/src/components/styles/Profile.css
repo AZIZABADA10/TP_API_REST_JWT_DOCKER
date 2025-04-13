@@ -1,0 +1,24 @@
+/* Profile.css */
+
+.profile-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .profile-container h2 {
+    color: #343a40;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .profile-container .welcome {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  
