@@ -1,74 +1,80 @@
+
 ```markdown
-#  TP_API_REST_JWT_DOCKER
+# TP API REST JWT avec Docker
 
-Ce projet est une démonstration d'une **API REST sécurisée avec JWT** et **MongoDB**, accompagnée d'une **interface React.js**, le tout orchestré avec **Docker**.
+Projet réalisé dans le cadre d'une TP
+##  Description
 
----
+Ce projet est un TP complet qui montre comment créer une API REST sécurisée avec **Node.js**, **Express**, **MongoDB** et **JWT**, et comment la déployer à l'aide de **Docker**. Il inclut également une interface frontend réalisée avec **React.js**.
+
+##  Architecture
+
+Le projet suit une architecture en microservices avec les composants suivants :
+
+- **Backend** (Node.js + Express + JWT + MongoDB)
+- **Frontend** (React.js)
+- **MongoDB** (Base de données NoSQL)
 
 ##  Structure du projet
 
 ```
 TP_API_REST_JWT_DOCKER/
 │
-├── Backend/          # API Express avec JWT & MongoDB
-├── frontend/         # Interface React (Register / Login / Profile)
-└── docker-compose.yml
+├── Backend/            # Code source de l'API Node.js
+│   └── .env            # Variables d'environnement (PORT, MONGO_URI, JWT_SECRET)
+│
+├── frontend/           # Application frontend React.js
+│   └── src/
+│       ├── components/
+│       │   ├── Login.js
+│       │   ├── Register.js
+│       │   └── Profile.js
+│       └── services/
+│           └── api.js
+│
+├── docker-compose.yml  # Fichier de configuration Docker Compose
+└── README.md           # Ce fichier
 ```
 
-##  Fonctionnalités
+##  Installation
 
-###  Backend (Node.js + Express)
-- Authentification sécurisée avec **JWT**
-- CRUD utilisateur de base
-- Protection des routes avec `authMiddleware`
-- Connexion à **MongoDB** via Mongoose
-
-###  Frontend (React.js)
-- Pages : `Register`, `Login`, `Profile`
-- Authentification via JWT (stocké dans `localStorage`)
-- Appels API avec **Axios**
-
----
-
-##  Utilisation avec Docker
-
-### 1. Cloner le projet
+1. **Cloner le dépôt :**
 
 ```bash
 git clone https://github.com/AZIZABADA10/TP_API_REST_JWT_DOCKER.git
 cd TP_API_REST_JWT_DOCKER
 ```
 
-### 2. Lancer les services
+2. **Lancer les services avec Docker Compose :**
 
 ```bash
 docker-compose up --build
 ```
 
-Cela lancera :
-- Le backend Node.js
-- Le frontend React
-- La base de données MongoDB
+3. **Accéder à l'application :**
+- Backend API : `http://localhost:5000`
+- Frontend React : `http://localhost:3000`
+- MongoDB : `mongodb://localhost:27017/jwt_demo`
 
----
+##  Fonctionnalités
 
-## ⚙️ Variables d'environnement
+- Authentification par **JWT**
+- Inscription, connexion, et profil utilisateur
+- Communication frontend-backend via API REST sécurisée
+- Conteneurisation complète avec Docker
 
-> À définir dans `.env` (ou dans Render via envVars)
+##  Réalisé par
 
-### Backend
-```env
-MONGO_URI=mongodb+srv://<user>:<pass>@cluster.mongodb.net/mydb
-JWT_SECRET=supersecret
+Projet réalisé dans le cadre de la formation **Développement Digital - Web Full Stack** à l’**ISTA NTIC Safi**.
+
+##  Technologies utilisées
+
+- Node.js / Express
+- MongoDB
+- JWT
+- React.js
+- Docker / Docker Compose
 ```
 
-### Frontend (si Vite)
-```env
-VITE_API_URL=https://api-backend.onrender.com/api
-```
 
----
-
-## 🧑‍💻 Auteur
-
-- **AZIZ ABADA** 
+-Developper par **AZIZ ABADA** 
