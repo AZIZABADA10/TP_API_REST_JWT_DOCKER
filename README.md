@@ -15,27 +15,6 @@ Le projet suit une architecture en microservices avec les composants suivants :
 - **Frontend** (React.js)
 - **MongoDB** (Base de données NoSQL)
 
-##  Structure du projet
-
-```
-TP_API_REST_JWT_DOCKER/
-│
-├── Backend/            # Code source de l'API Node.js
-│   └── .env            # Variables d'environnement (PORT, MONGO_URI, JWT_SECRET)
-│
-├── frontend/           # Application frontend React.js
-│   └── src/
-│       ├── components/
-│       │   ├── Login.js
-│       │   ├── Register.js
-│       │   └── Profile.js
-│       └── services/
-│           └── api.js
-│
-├── docker-compose.yml  # Fichier de configuration Docker Compose
-└── README.md           # Ce fichier
-
-
 ##  Installation
 
 1. **Cloner le dépôt :**
