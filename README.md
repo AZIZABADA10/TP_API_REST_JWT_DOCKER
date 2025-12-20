@@ -1,59 +1,28 @@
-
-```markdown
 ## TP API REST JWT avec Docker
 
-Projet réalisé dans le cadre d'une TP
-##  Description
+Projet académique réalisé **durant la formation Développement Digital - Web Full Stack à l'ISTA NTIC Safi**.
 
-Ce projet est un TP complet qui montre comment créer une API REST sécurisée avec **Node.js**, **Express**, **MongoDB** et **JWT**, et comment la déployer à l'aide de **Docker**. Il inclut également une interface frontend réalisée avec **React.js**.
+### Description
+API REST sécurisée avec **Node.js**, **Express**, **MongoDB** et **JWT**, accompagnée d’un frontend en **React.js**, déployée avec **Docker**.
 
-##  Architecture
+### Architecture
+- **Backend** : Node.js + Express + JWT + MongoDB  
+- **Frontend** : React.js  
+- **Base de données** : MongoDB  
 
-Le projet suit une architecture en microservices avec les composants suivants :
+### Fonctionnalités
+- Authentification sécurisée via JWT  
+- Gestion des utilisateurs : inscription, connexion, profil  
+- Conteneurisation complète avec Docker  
 
-- **Backend** (Node.js + Express + JWT + MongoDB)
-- **Frontend** (React.js)
-- **MongoDB** (Base de données NoSQL)
-
-##  Installation
-
-1. **Cloner le dépôt :**
-
+### Installation rapide
 ```bash
 git clone https://github.com/AZIZABADA10/TP_API_REST_JWT_DOCKER.git
 cd TP_API_REST_JWT_DOCKER
-```
-
-2. **Lancer les services avec Docker Compose :**
-
-```bash
 docker-compose up --build
 ```
+### Développé par: Aziz Abada
 
-3. **Accéder à l'application :**
-- Backend API : `http://localhost:5000`
-- Frontend React : `http://localhost:3000`
-- MongoDB : `mongodb://localhost:27017/jwt_demo`
+Technologies
 
-##  Fonctionnalités
-
-- Authentification par **JWT**
-- Inscription, connexion, et profil utilisateur
-- Communication frontend-backend via API REST sécurisée
-- Conteneurisation complète avec Docker
-
-##  Réalisé par
-
-Projet réalisé dans le cadre de la formation **Développement Digital - Web Full Stack** à l’**ISTA NTIC Safi**.
-
-##  Technologies utilisées
-
-- Node.js / Express
-- MongoDB
-- JWT
-- React.js
-- Docker / Docker Compose
-```
-
-
--Developper par **AZIZ ABADA** 
+Node.js, Express, MongoDB, JWT, React.js, Docker
